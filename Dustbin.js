@@ -7,7 +7,7 @@ class Dustbin {
     this.width=width;
     this.height=height;
 
-    this.image=loadImage("images/dustbingreen.png");
+    this.image=loadImage("dustbingreen.png");
     World.add(world,this.body);
 }
 display(){
@@ -17,13 +17,8 @@ display(){
     push();
     translate(pos.x,pos.y);
     rotate(angle);
-    rectMode(CENTER);
     imageMode(CENTER);
     image(this.image, 0, 0, this.width, this.height);
-    strokeWeight(4);
-    stroke("blue");
-    fill("red");
-    rect(0,0,this.width,this.height);
     pop();
 }
 }
